@@ -4,32 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--JS-->
     <script src="js/script.js" defer></script>
+    
     <title>Finanças</title>
 </head>
 <body>
     <header>
-        <h1>Finança$</h1>
+        <div class="head-title">
+            <h1>Finança$</h1>
+        </div>
     </header>
     <div class="money-count">
         <div class="money-card">
             <div class="card">
                 <div class="card-title">
                     <h2>Entradas</h2>
-                    <img src="" alt="" srcset="">
+                    <img src="img/plus.svg" alt="incomes">
                 </div>
                 <div class="card-value">
-                    
+                    <p class="amount">R$ 350,00</p>
                 </div>
             </div>
             <div class="card">
-                <div class="card-title"></div>
-                <div class="card-value"></div>
+                <div class="card-title">
+                    <h2>Saídas</h2>
+                    <img src="img/minus.svg" alt="expenses">
+                </div>
+                <div class="card-value">
+                    <p class="amount">R$ 350,00</p>
+                </div>
             </div>
             <div class="card">
-                <div class="card-title"></div>
-                <div class="card-value"></div>
+                <div class="card-title">
+                    <h2>Total</h2>
+                    <img src="img/money.svg" alt="money">
+                </div>
+                <div class="card-value">
+                    <p class="amount">R$ 350,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="btn-add">
+                <a href="#" class="add-transact">Adicionar Transação +</a>
+            </div>
+            <div class="values">
+                <ul class="list-value">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-form">
+            <div class="form-up">
+                <legend>Descrição</legend>
+                <input type="text" class="text" id="description">
+            </div>
+            <div class="form-middle">
+                <div class="midle-left">
+                    <legend>Valor</legend>
+                    <input type="number" name="value" id="value">
+                </div>
+                <div class="midle-right">
+                    <legend>Data</legend>
+                    <input type="date" name="date" id="date">
+                    <div class="check-opt">
+                        <div class="checkk">
+                            <input type="radio" name="opt" id="opt" value="in">
+                            <label for="check">Entrada</label><br>
+                        </div>
+                        <div class="checkk">
+                            <input type="radio" name="opt" id="opt" value="out">
+                            <label for="check">Saída</label><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-down">
+                <button class="save-transact">Salvar</button>
+                <button class="close-modal">Fechar</button>
             </div>
         </div>
     </div>
