@@ -1,0 +1,12 @@
+@media (max-width: 723px)
+{
+    .money-card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container{
+        position: absolute;
+        top: 450px;
+    }
+}

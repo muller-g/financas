@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!--Css-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.responsivo.css">
     <!--JS-->
     <script src="js/script.js" defer></script>
     
@@ -29,7 +30,7 @@
                     <img src="img/plus.svg" alt="incomes">
                 </div>
                 <div class="card-value">
-                    <p class="amount">R$ 350,00</p>
+                    <p class="amount" id="incomes">R$ 0,00</p>
                 </div>
             </div>
             <div class="card">
@@ -38,7 +39,7 @@
                     <img src="img/minus.svg" alt="expenses">
                 </div>
                 <div class="card-value">
-                    <p class="amount">R$ 350,00</p>
+                    <p class="amount" id="expenses">R$ 0,00</p>
                 </div>
             </div>
             <div class="card">
@@ -47,7 +48,7 @@
                     <img src="img/money.svg" alt="money">
                 </div>
                 <div class="card-value">
-                    <p class="amount">R$ 350,00</p>
+                    <p class="amount" id="money">R$ 0,00</p>
                 </div>
             </div>
         </div>
@@ -56,6 +57,7 @@
         <div class="main-content">
             <div class="btn-add">
                 <a href="#" class="add-transact">Adicionar Transação +</a>
+                <a href="#" class="clear-transact">Limpar Lista</a>
             </div>
             <div class="values">
                 <ul class="list-value">
@@ -67,16 +69,16 @@
         <div class="modal-form">
             <div class="form-up">
                 <legend>Descrição</legend>
-                <input type="text" class="text" id="description">
+                <input type="text" class="text" id="description" required>
             </div>
             <div class="form-middle">
                 <div class="midle-left">
                     <legend>Valor</legend>
-                    <input type="number" name="value" id="value">
+                    <input type="number" name="value" id="value" required>
                 </div>
                 <div class="midle-right">
                     <legend>Data</legend>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" required>
                     <div class="check-opt">
                         <div class="checkk">
                             <input type="radio" name="opt" id="opt" value="in">
